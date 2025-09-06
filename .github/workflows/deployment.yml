@@ -23,6 +23,7 @@ jobs:
                 # dist
                 # package.json
     artifcat:
+        needs: build
         runs-on: ubuntu-latest
         steps:
           - name: Get build artifacts
